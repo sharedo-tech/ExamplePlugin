@@ -1,0 +1,37 @@
+﻿<div class="modal-header">
+    <div class="flex-row">
+        <div class="column-auto">
+            <span class="fa header-icon fa fa-institution"></span>
+        </div>
+        <div class="column-fit">
+            <h4 class="modal-title">Example Provider</h4>
+            <div class="small">Example ODS Search Provider</div>
+        </div>
+        <div class="column-auto">
+            <!-- ko component: { name: "ribbon", params: { ribbon: ribbon }} -->
+            <!-- /ko -->
+        </div>
+    </div>
+</div>
+
+<form>
+    <div class="modal-body nano">
+        <div class="nano-content remove-vertical-padding remove-horizontal-padding remove-outer-padding aspect-display-panel">
+            
+            <div class="widget">
+                <div class="widget-title">
+                    <h3><span class="fa fa-lock"></span> Authentication</h3>
+                </div>
+                <div class="widget-body">
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <label for="api-key">Result Prefix:</label>
+                            <input id="api-key" class="form-control input-sm" type="text" data-bind="textInput: configuration.resultPrefix" />
+                            <div class="text-danger" data-bind="visible: !configuration.resultPrefix">Result Prefix is required</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

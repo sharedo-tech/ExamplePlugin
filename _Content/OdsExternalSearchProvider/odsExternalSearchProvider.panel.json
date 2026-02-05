@@ -1,0 +1,13 @@
+﻿{
+  "width": 400,
+  "id": "ExamplePlugin.OdsExternalSearchProvider",
+  "scripts": [
+    "/_pluginFiles/ExamplePlugin/OdsExternalSearchProvider/panel.js"
+  ],
+  "styles": [
+  ],
+  "templates": [
+    "/_pluginFiles/ExamplePlugin/OdsExternalSearchProvider/panel.html"
+  ],
+  "components": []
+}
