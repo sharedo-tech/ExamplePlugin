@@ -1,0 +1,12 @@
+{
+  "SystemName": "ExamplePlugin",
+  "Name": "ExamplePlugin",
+  "Description": "ExamplePlugin",
+  "Version": "1.0.0",
+  "IconFile": "logo.png",
+  "Files": [
+    "ExamplePlugin.dll"
+  ],
+  "ContentFolder": "../../_Content",
+  "MigrationsFolder": "../../_Migrations" 
+}
