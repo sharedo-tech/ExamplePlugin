@@ -19,7 +19,7 @@ This is commonly used to search a third-party address/geocoding service for addr
 | Member | Purpose |
 |---|---|
 | `SystemName` / `DisplayName` | Identify the provider in configuration |
-| `ConfigWidget` | The id of the custom configuration **widget** (see `./_Content/AddressFinder`). The 'Address Lookup' feature embeds this widget inline via `$ui.widgets.loadWidget` when the provider is selected - it is not opened as a stack panel. The id must match the `id` in `addressFinder.widget.json`. |
+| `ConfigWidget` | The id of the custom configuration **widget** (see `./_Content/AddressFinder`). The 'Address Lookup' feature embeds this widget. The id must match the `id` in `addressFinder.widget.json`. |
 | `SearchAddresses(term, config)` | Return a list of `AddressSummary` suggestions matching the search term |
 | `GetAddressById(id, config)` | Expand a selected summary into a full `AddressDetail` |
 | `Geocode(location, country, config)` | Resolve a free-text location to a `GeocodeDetail` (coordinates) |
@@ -34,8 +34,7 @@ config reaching each endpoint.
 
 The widget is a plain view model driven by the host blade: it constructs the widget,
 calls `load(config)` to populate the UI, reads `validationErrorCount()` to enable/disable
-its Save button, and calls `save()` to get the object to persist. There is no modal
-header, ribbon or `$ui.stacks` call in the widget - the blade owns that chrome.
+its Save button, and calls `save()` to get the object to persist.
 
 This sample returns hard-coded results — replace the bodies with real calls to your
 address/geocoding service (use the injected `ICoreHttpRetryClient` for HTTP):
