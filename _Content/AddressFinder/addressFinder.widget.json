@@ -1,0 +1,12 @@
+{
+  "id": "ExamplePlugin.AddressFinder",
+  "scripts": [
+    "/_pluginFiles/ExamplePlugin/AddressFinder/widget.js"
+  ],
+  "styles": [
+  ],
+  "templates": [
+    "/_pluginFiles/ExamplePlugin/AddressFinder/widget.html"
+  ],
+  "components": []
+}
